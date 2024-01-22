@@ -8,7 +8,7 @@ import org.insurgencedev.insurgencesets.api.addon.InsurgenceSetsAddon;
 public class ExperienceCurrencyAddon extends InsurgenceSetsAddon {
 
     @Override
-    public void onAddonStart() {
+    public void onAddonReloadablesStart() {
         ISetsAPI.getCurrencyManager().registerCurrency(new ExperienceCurrency());
     }
 }
